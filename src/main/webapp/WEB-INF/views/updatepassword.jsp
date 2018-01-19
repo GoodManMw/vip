@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'login.jsp' starting page</title>
+    <title>My JSP 'updatepassword.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,25 +21,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 
   </head>
-  <script type="text/javascript">
-  	if(window.top!==window){
-  		window.top.location.href = window.location.href;
-  	}
-  </script>
   
   <body>
   	<strong>${message}</strong>
-	<form action="login.do" method = "post">
+	<form action="updatepassword.do" method = "post">
 		<p>
-			<label>Account:<input name = "account" value = "0001"/></label>			
+			<label>旧密码:<input name = "oldPassword"/></label>			
 		</p>
 		<p>
-			<label>Password:<input name = "password" type = "password" value = "123456"/></label>
+			<label>新密码:<input name = "newPassword"/></label>
 		</p>
 		<p>
-			<button type = "submit">Login</button>
+			<label>新密码确认:<input name = "newPasswordConfirm"/></label>
+		</p>
+		<p>
+			<button type = "submit">确定</button>
+			<a href = "wellcom.jsp">返回</a>
 		</p>
 	</form>
-	<%session.removeAttribute("message"); %>
   </body>
 </html>

@@ -25,7 +25,7 @@
 	<!-- 配置c3p0数据源 -->
 	<bean id = "dataSource" class = "com.mchange.v2.c3p0.ComboPooledDataSource">
 		<property name="driverClass" value = "com.mysql.jdbc.Driver"/>
-		<property name="jdbcUrl" value = "root"/>
+		<property name="jdbcUrl" value = "jdbc:mysql://127.0.0.1:3306/vip"/>
 		<property name="user" value = "root"/>
 		<property name="password" value = "806517wh"/>
 		<property name="minPoolSize" value = "1"/>

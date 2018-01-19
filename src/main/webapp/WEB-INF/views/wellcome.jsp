@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'login.jsp' starting page</title>
+    <title>My JSP 'wellcome.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,25 +21,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 
   </head>
-  <script type="text/javascript">
-  	if(window.top!==window){
-  		window.top.location.href = window.location.href;
-  	}
-  </script>
   
   <body>
-  	<strong>${message}</strong>
-	<form action="login.do" method = "post">
-		<p>
-			<label>Account:<input name = "account" value = "0001"/></label>			
-		</p>
-		<p>
-			<label>Password:<input name = "password" type = "password" value = "123456"/></label>
-		</p>
-		<p>
-			<button type = "submit">Login</button>
-		</p>
-	</form>
-	<%session.removeAttribute("message"); %>
+    请点击左侧按钮继续!
   </body>
 </html>
