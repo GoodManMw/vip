@@ -40,6 +40,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<button type = "submit">Login</button>
 		</p>
 	</form>
+	<form action="vip/qry.do" method = "post">
+		<input name = "code" value = "13888888888"/>
+		<button type = "submit" >点击查询</button>
+	</form>
 	<%session.removeAttribute("message"); %>
   </body>
 </html>
